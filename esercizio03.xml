@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<text>
+    il primo xml con validazione
+</text>
+<text />
+
+<!-- OUTPUT ERRORE XMLLLINT
+
+esercizio03.xml:5: parser error : Extra content at the end of the document
+<text />
+
+L'elemento <text /> è un elemento vuoto, superfluo
+
+ -->
+
+<!-- VERSIONE CORRETTA
+
+<text>
+    il primo xml con validazione
+    <child> elemento figlio dell'elemento text </child>
+    <sibling> elemento fratello dell'elemento child </sibling>
+</text>
+
+-->
