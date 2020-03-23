@@ -1,0 +1,30 @@
+<!-- VERSIONE SBAGLIATA -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<choice>
+     <b> testo in bold e <i>bold-italico</b>
+     testo in italico </i>
+</choice> 
+
+<!-- OUTPUT DI ERRORE XMLLINT 
+
+     esercizio02.xml:2: parser error : XML declaration allowed only at the start of the document
+<?xml version="1.0" encoding="utf-8"?>
+     ^
+esercizio02.xml:5: parser error : Opening and ending tag mismatch: i line 5 and b
+     <b> testo in bold e <i>bold-italico</b>
+                                            ^
+esercizio02.xml:6: parser error : Opening and ending tag mismatch: b line 5 and i
+     testo in italico </i>
+-->
+
+<!-- VERSIONE CORRETTA 
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<choice>
+     <b> testo in bold </b>
+     <i>testo in italico </i>
+</choice> 
+
+-->
