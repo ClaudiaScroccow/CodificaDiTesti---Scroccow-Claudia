@@ -1,0 +1,8 @@
+<!-- 
+    Studente: Claudia Scroccow
+    Matricola: 559002
+    Corso: Codifica Testi 19-20
+-->
+<!-- abbiamo bisogno di dichiarare sempre gli elementi presenti secondo la giusta parentela-->
+<!ELEMENT radice (figlio) >
+<!ELEMENT figlio (#PCDATA) >
